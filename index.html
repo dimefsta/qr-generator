@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qr Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="qr-generator-box">
+        <h1>Qr Generator</h1>
+        <input type="text" id="url-input" placeholder="Enter URL here">
+        <button id="generate-btn">Generate</button>
+        <canvas id="qr-code"></canvas>
+        <div class="download-options hidden" id="download-section">
+            <button id="download-img hidden">Download as a PNG</button>
+            <button id="download-pdf hidden">Download as a PDF</button>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/qrious/dist/qrious.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

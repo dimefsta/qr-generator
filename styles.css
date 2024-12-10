@@ -1,0 +1,88 @@
+/* Defining color variables*/
+:root {
+    --background-color: #03ff93;
+    --box-background-color: #F4FBF8;
+    --text-color: #03ff93;
+    --input-border-color: #F4FBF8;
+    --button-background-color: #04DB00;
+    --button-hover-color: #38FF3F;
+    --button-text-color: #ffffff;
+    --box-shadow-color: #03ff93;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .qr-generator-box {
+    background-color: var(--box-background-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px var(--box-shadow-color);
+    text-align: center;
+    width: 300px;
+  }
+  
+  .qr-generator-box h1 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    color: var(--text-color);
+  }
+  
+  .qr-generator-box input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid var(--input-border-color);
+    border-radius: 5px;
+  }
+  
+  .qr-generator-box button {
+    background-color: var(--button-background-color);
+    color: var(--button-text-color);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .qr-generator-box button:hover {
+    background-color: var(--button-hover-color);
+  }
+  
+  #qr-code {
+    margin: 15px auto;
+    display: block;
+  }
+  
+  .hidden {
+    display: none;
+  }
+
+  .download-options {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Space between buttons */
+    margin-top: 15px; /* Space above the buttons */
+  }
+  
+  .download-options button {
+    padding: 10px 15px;
+    background-color: var(--button-background-color);
+    color: var(--button-text-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .download-options button:hover {
+    background-color: var(--button-hover-color);
+  }
