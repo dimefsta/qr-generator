@@ -31,12 +31,14 @@
     }, 3000);
   }
 
+  // Pre-compiled Domain Pattern for URL normalization
+  const DOMAIN_PATTERN = /^(?:www\.)?[a-zA-Z0-9][-a-zA-Z0-9@:%._+~#=]{1,256}\.[a-zA-Z0-9()]{2,6}\b([-a-zA-Z0-9()@:%_+.~#?&/=]*)$/i;
+
   // Validation & URL Normalization
   function normalizeContent(rawText) {
     const trimmed = rawText.trim();
     if (!trimmed) return '';
-    const domainPattern = /^(?:www\.)?[a-zA-Z0-9][-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{2,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)$/i;
-    if (domainPattern.test(trimmed)) {
+    if (DOMAIN_PATTERN.test(trimmed)) {
       return 'https://' + trimmed;
     }
     return trimmed;
@@ -59,7 +61,7 @@
   // QR Code Generator
   function generateQrCode(text) {
     if (typeof QRious === 'undefined') {
-      showToast('QR code engine failed to load. Check internet connection.', true);
+      showToast('QR code engine failed to initialize.', true);
       return;
     }
     try {

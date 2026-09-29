@@ -26,12 +26,10 @@ jsPDF Library: Enables PDF generation of the QR code.
 
 
 QRious:
-
-CDN: https://cdn.jsdelivr.net/npm/qrious/dist/qrious.min.js
+Bundled locally in `vendor/qrious.min.js` (v4.0.2)
 
 jsPDF:
-
-CDN: https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js
+Bundled locally in `vendor/jspdf.umd.min.js` (v4.2.1)
 
 
 How to Use

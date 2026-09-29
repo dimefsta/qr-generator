@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
   <title>QR Code Generator — Fast, Modern & Responsive</title>
   <meta name="description" content="A modern, mobile-first QR code generator. Generate, customize, and export crisp QR codes as PNG or PDF instantly.">
+  <!-- Security Headers -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: blob:;">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
   <!-- Google Fonts: Inter -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -141,9 +144,9 @@
     <span id="toast-text">Message</span>
   </div>
 
-  <!-- CDN Dependencies -->
-  <script src="https://cdn.jsdelivr.net/npm/qrious@4.0.2/dist/qrious.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <!-- Local Vendor Dependencies (Offline, Supply-Chain Secure) -->
+  <script src="vendor/qrious.min.js"></script>
+  <script src="vendor/jspdf.umd.min.js"></script>
   <!-- Application Script -->
   <script src="script.js"></script>
 </body>
